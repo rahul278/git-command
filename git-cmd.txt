@@ -1,0 +1,99 @@
+GIT 
+
+step to push the directory
+
+yum install git* -y
+mkdir ansh1
+cd ansh1
+git init
+
+generate the ssh key 
+
+For windows
+ssh-keygen -o
+
+-----(ssh-keygen -t ed25519 -C "your email id")
+
+cat /root/.ssh/id_ed25519.pub
+
+vi ansh
+git add ansh
+git commit -m "one"
+git branch -m master
+git remote add origin "https://github.com/rahul278/Circle-ci.git"
+git push -u origin master
+ 
+
+steps to pull the file from the directory
+
+*git clone "directory path"  
+cd "directory name"
+vi "file name"
+git add git
+git commit -m "two"
+git push -u origin main
+
+* Git ignore file format
+ cd vikramgit
+   87  vi .gitignore
+create the file formate in vi like *.css and *.java
+   88  git add  .gitignore
+   89  git commit -m "ignore file format"
+   90  git status
+   91  touch file1.txt file2.java file3.css
+   92  ls
+   93  git status
+   94  git add .
+   95  git status
+   96  git commit -m "ignore java and css file"
+   97  git log
+   98  git show 43370a70b1f19e47
+   99  touch vikram.java
+  100  git status
+  101  touch vikram.txt
+  102  git status
+  103  git add .
+  104  git status
+  105  git log -1
+  106  git log -3
+*Merge branch with main(master)
+ 149  git branch
+  150  ls
+  151  git log --oneline
+  152  git merge branch2
+  153  ls
+  154  git log --oneline
+  155  git push -u origin main
+
+* Git stash (For temporary space)
+168  cat demofile
+  169  git stash list
+  170  vi demofile
+  171  cat demofile
+  172  git stash
+  173  git stash list
+  174  git stash apply stash@{0}
+  175  cat demofile
+  176  git stash apply stash@{0}
+  177  git add .
+  178  git commit -m "first code done"
+  179  git stash apply stash@{1}
+  180  vi demofile
+  181  git add .
+  182  git commit -m "second code for done"
+  183  git status
+  184  git log --one line
+  185  git log --oneline
+  186  git stash clear
+  187  git stash list
+
+* Git reset
+cat >testfile
+git add .
+git reset
+git reset --hard (for the remove staging area and working space)
+git status
+
+
+
+   
